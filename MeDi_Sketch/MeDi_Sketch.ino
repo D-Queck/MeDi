@@ -59,8 +59,8 @@ void loop()
 	digitalWrite(TRIGGER_PIN, HIGH);
 	delay(10); //Signal wird nach 10 m/s ausgesetzt
 	digitalWrite(TRIGGER_PIN, LOW);
-	timeSignal = pulseIn(ECHO_PIN, HIGH); //�pulseIn� z�hlt der Mikrokontroller die Zeit in Mikrosekunden, bis der Schall zum Ultraschallsensor zur�ckkehrt
-	distance = (timeSignal / 2) * 0.03432; //Berechnung Entfernung in cm, hin + zur�ck * SChallgeschwindigkeit (343,2 m/s)
+	timeSignal = pulseIn(ECHO_PIN, HIGH); //pulseIn -> zählt der Mikrokontroller die Zeit in Mikrosekunden, bis der Schall zum Ultraschallsensor zurückkehrt
+	distance = (timeSignal / 2) * 0.03432; //Berechnung Entfernung in cm, hin + zurück * SChallgeschwindigkeit (343,2 m/s)
 
 	//Sensor
 	//Definieren der Messgrenzen für Sensor
